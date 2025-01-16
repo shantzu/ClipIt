@@ -331,7 +331,7 @@ void search_window_response(GtkDialog *dialog, gint response_id, gpointer user_d
 }
 
 /* Shows the search dialog */
-gboolean show_search()
+gboolean show_search(gpointer user_data)
 {
   /* Prevent multiple instances */
   if(gtk_grab_get_current()) {

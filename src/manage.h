@@ -24,7 +24,7 @@
 
 G_BEGIN_DECLS
 
-gboolean show_search();
+gboolean show_search(gpointer);
 void remove_all_selected(gpointer);
 
 G_END_DECLS

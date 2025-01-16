@@ -430,7 +430,7 @@ static void start_purge_timer(gint timeout_seconds);
 static void stop_purge_timer();
 
 /* Purge history if history_timeout is enabled. This function is called every prefs.history_timeout_seconds */
-static gboolean purge_history() {
+static gboolean purge_history(gpointer user_data) {
     if (prefs.history_timeout) {
       g_list_free(history);
       history = NULL;
